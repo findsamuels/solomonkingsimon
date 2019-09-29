@@ -1,0 +1,70 @@
+
+.adminContainer{
+      @include layout(col-sm-layout);
+      display: grid;
+      justify-self: center;
+@include respond(md){
+         @include layout(col-md-layout);
+    }
+}
+.adminDiv{
+     
+     @include layout(full-layout);
+     display: grid;
+     justify-content: center;
+
+
+
+}
+
+.headerBox{
+box-shadow: $box-shadow-pressed-sm;
+background-color: $color-white;
+
+ &__head{
+ color: $color-grey-dark;
+ text-align: center;
+ padding: 1rem;
+ }
+}
+.errorBox{
+box-shadow: $box-shadow-pressed-sm;
+color: $color-red !important;
+}
+.formBox{  
+    display: grid;
+    background-color: $color-white;
+  
+
+}
+.adminForm{
+background-color: $color-white;
+    &__input{
+border: .1rem solid $color-primary;
+box-shadow: $box-shadow-pressed-sm;
+    }
+    &__label{
+        color: $color-grey-dark;
+        font-size: $small-font-size;
+        letter-spacing: .3rem;
+    }
+}
+
+.admin-head{
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.errorBox{
+box-shadow: $box-shadow-md;
+color: $color-red !important;
+margin-bottom: .5rem;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+@import './abstracts/variables';
+
+@import './abstracts/mixins';
+@import './base';
+@import './abstracts/typography';
+@import './abstracts/utilities';
+@import './abstracts/animation';
+
+// @import 'node_modules/bootstrap/scss/bootstrap';
+// @import 'node_modules/bootstrap-vue/src/index.scss';
+
+@import './components/form';
+@import './components/nav';
+@import './components/button';
+@import './components/leftBar';
+@import './components/adminHeader';
+@import './components/adminDashbord';
+@import './components/card';
+@import './components/adminView';
+@import './components/createPost';
+
+@import './components/viewPost';
+@import './components/headerComponent';
+@import './components/about';
+@import './components/homeCta';
+@import './components/latestPosts';
+@import './components/footer';
+@import './components/banner';
+@import './components/addVideos';
+@import './components/deleteBox';
+@import './views/shop';
+@import './views/fights';
+@import './views/buy';
+@import './views/admin';
+@import './views/reset';
+@import './views/blog';
+@import './views/video';
+@import './views/Home';
+@import './views/selectedBlog';
+@import './views/contacts'
+

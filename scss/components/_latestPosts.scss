@@ -1,0 +1,17 @@
+.latestPosts{
+    @include layout(center-layout);
+    display: grid;
+    grid-gap: 1rem;
+    margin: 2rem 0;
+}
+.latestPostBox{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
+   
+
+    @include respond(lg){
+        grid-template-columns: 1fr;
+    }
+}

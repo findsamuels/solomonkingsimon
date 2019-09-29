@@ -1,0 +1,60 @@
+.headerComponent{
+    display: grid;
+    @include layout(full-layout);
+   height: 100vh;
+
+    text-align: center;
+    background-image: linear-gradient(to right, $color-black, $color-light-blue);
+    color: $color-white;
+    grid-gap: 1rem;
+   
+    &__box{
+        display: grid;
+        z-index: 99;
+        height: auto;
+        justify-items: center;
+align-self: center;
+grid-gap: 3rem;
+
+    }
+    &__btn{
+        
+    }
+    &__header{
+        text-transform: uppercase;
+        font-size: $heading-font-big;
+        font-weight: 900;
+    }
+    &__subtitle{
+text-transform: uppercase;
+
+&--1{
+opacity: .5;
+}
+
+
+    }
+    .headerArrow{
+
+cursor: pointer;
+    }
+    .buttomSubtitle{
+        display: grid;
+        grid-gap: 1rem;
+    }
+}
+.videoBg{
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    width: 100%;
+    height: auto;
+   
+filter: brightness(50%);
+// filter: blur(.1rem);
+    @include respond(md){
+height: 100%;
+    width: auto;
+    display: none;
+    }
+   
+}

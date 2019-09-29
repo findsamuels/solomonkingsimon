@@ -1,0 +1,53 @@
+
+.adminHeader{
+background-image: linear-gradient(to right, $color-black, $color-grey-dark, $color-grey-light);
+@include layout(full-layout);
+display: grid;
+box-shadow: $box-shadow-pressed-xs;
+grid-template-columns: repeat(2 , 1fr);
+grid-gap: 1rem;
+padding: 1.2rem;
+align-items: center;
+z-index: 999;
+width: 100%;
+
+@include respond(lg){
+    grid-template-columns: 1fr 1fr 2fr
+    }
+
+&__toggle{
+
+    @include respond(lg){
+        grid-column: 1 / 2
+    }
+}
+    &__brand{
+justify-self: start;
+color: $color-white;
+
+@include respond(lg){
+        grid-column: 2 / 3;
+    }
+
+    }
+
+    &__item{
+justify-self: end;
+justify-items: center;
+display: grid;
+grid-gap: 1rem;
+grid-template-columns: repeat(2 , 1fr);
+@include respond(lg){
+        grid-column: 3 / 4;
+    }
+    }
+
+    &__list{
+        cursor: pointer;
+    }
+    &__link{
+color: $color-white;
+
+letter-spacing: .2rem;
+    }
+}

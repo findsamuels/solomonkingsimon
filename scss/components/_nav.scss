@@ -1,0 +1,179 @@
+
+
+.nav{
+@include layout(full-layout);
+
+ background-image: linear-gradient(to right, $color-black, $color-light-blue);
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+align-items: center;
+grid-gap: 1rem;
+text-transform: uppercase;
+justify-items: center;
+@include respond(lg){
+background-image: linear-gradient(to right, $color-black, $color-light-blue);
+overflow-y: auto;
+
+}
+
+    .brand-box{
+
+        @include respond(lg){
+            justify-self: start;
+            padding: 1rem;
+            color: $color-red;
+           grid-column: 1 / span 3;
+           grid-row: 1 / 2;
+        }
+    }
+    &__brand{
+    
+        
+        
+      color: $color-white;
+        font-weight: 700;
+        &:hover{
+            
+            text-decoration: none;
+    
+        }
+        @include respond(lg){
+            
+            color: $color-white;
+        }
+    }
+    .toggle-container{
+display: none;
+cursor: pointer;
+
+@include respond(lg){
+            display: block;
+            grid-column: 2 / 3;
+            justify-self: end;
+            grid-row: 1 / 2;
+            padding-right: 1rem;
+
+        }
+        
+    }
+    &__toggle{
+        color: $color-white;
+        font-size: 4rem;
+        cursor: pointer;
+    }
+    &__item{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+        padding: 1rem;
+        align-items: center;
+        justify-self: center;
+        grid-column: 2 / 3;
+
+        @include respond(lg){
+display: none;
+grid-column: 1 / -1;
+justify-self: start;
+background-image: linear-gradient(to right, $color-black, $color-light-blue);
+ border-top: $border-ex-light;
+
+ width: 100vw;
+ height: 100vh;
+
+
+
+        }
+    }
+    &__list{
+        align-self: center;
+
+        
+        @include respond(lg){
+             padding: 1.5rem 0;
+ text-align: center;
+       
+            
+        }
+       
+    }
+    &__link{
+        color: $color-white;
+        font-weight: 700;
+       
+        font-size: $medium-font-size;
+cursor: pointer;
+        &:hover{
+            color: $color-primary;
+            text-decoration-line: line-through
+        }
+        @include respond(lg){
+         font-size: $heading-font-big;
+         
+          color: $color-white;
+               &:hover{
+            color: $color-primary
+        }
+          
+        }
+
+    }
+    &__dropdown-box{
+        color: $color-dark-blue;
+        font-weight: 700;
+cursor: pointer;
+position: relative;
+&:hover{
+            color: $color-red;
+            text-decoration: none;
+        
+
+        }
+        @include respond(lg){
+           
+            color: $color-white;
+            padding: 1.5rem 0;
+        }
+    }
+    &__dropdown-item{
+        display: none;
+        z-index: 999;
+        background-color: $color-white;
+        border: $border-ex-light;
+        justify-content: center;
+        position: absolute;
+        top: 2.8rem;    
+        padding: 1rem;
+animation: slideDown .5s ease-in-out;
+        @include respond(lg){
+           
+            position: initial;
+            background-color: inherit;
+            padding: 0;
+             z-index: 0;
+             animation: slideRight .5s ease-in-out;
+             margin: .5rem 0;
+        }
+    }
+    &__dropdown-list{
+padding: 1rem;
+    }
+
+    &__dropdown-link{
+        color: $color-dark-blue;
+        font-weight: 700;
+        justify-self: center;
+        &:hover{
+
+        }color: $color-red;
+            text-decoration: none;
+        
+        @include respond(lg){
+           color: $color-white;
+        }
+    
+   
+}
+ 
+
+    }
+    

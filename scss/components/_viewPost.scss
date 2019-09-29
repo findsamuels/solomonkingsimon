@@ -1,0 +1,87 @@
+.viewComponent{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: [post-start] minmax(8rem, 1fr)[post-center-start] 5fr [post-center-end]  minmax(8rem, 1fr)[post-end];
+    position: relative;
+    &__title{
+border-bottom: $border-ex-light;
+box-shadow: $box-shadow-pressed-sm;
+
+        text-align: center;
+       
+        
+        grid-column: post-start / post-end;
+        
+        .post-text{
+           padding: 1rem
+        }
+    }
+
+    &__postSearch{
+        text-align: center;
+        justify-self: center;
+        grid-column: post-start / post-end;
+
+    }
+&__spinnerbox{
+display: grid;
+justify-items: center;
+grid-column: post-start / post-end;
+align-self: baseline;
+
+    
+}
+    &__postBox{
+display: grid;
+grid-column: post-start / post-end;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    
+@include respond(lg){
+    grid-template-columns: 1fr;
+}
+    }
+    .postControl{
+        text-transform: uppercase;
+box-shadow: $box-shadow-pressed-xs;
+background-color: $color-primary;
+color: $color-light-blue;
+grid-gap: .5rem;
+border: $border-blue-ex-light;
+width: 80%;
+padding: 1rem;
+cursor: pointer;
+&:hover{
+    
+}
+    }
+    &__lists{
+
+
+
+    }
+    .listControl{
+    height: inherit;
+    border: none;
+    box-shadow: none;
+    
+}
+    .modifyFormBox{
+         display: grid;
+        // justify-content: center;
+        grid-column: post-center-start / post-center-end;
+
+        @include respond(md){
+            grid-column: post-start / post-end;
+        }
+    }
+
+    .modifyBox{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: .5rem;
+        position: relative;
+    }
+}

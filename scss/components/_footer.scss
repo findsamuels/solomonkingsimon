@@ -1,0 +1,55 @@
+.footerComponent{
+@include layout(full-layout);
+border-top: $border-ex-light;
+display: grid;
+ background-image: linear-gradient(to right, $color-black, $color-light-blue);
+z-index: 100;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 1rem;
+justify-items: center;
+align-items: center;
+color: $color-white;
+padding: 1rem;
+text-align: center;
+
+@include respond(md){
+    grid-template-columns: 1fr;
+}
+}
+
+.footer-cta{
+
+    &__inputBox{
+        display: grid;
+        grid-template-columns: 1fr 40%;
+        justify-content: center;
+        grid-gap: 0;
+    }
+
+    @include respond(md){
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer-social{
+display: block;
+text-align: center;
+    &__header{
+
+    }
+    &__box{
+
+        &--icon{
+            font-size: $heading-4-font;
+            padding: 1rem;
+            
+        }
+    }
+}
+.footer-copyright{
+
+}
+.cta-label{
+    color: $color-white;
+    text-transform: uppercase;
+}

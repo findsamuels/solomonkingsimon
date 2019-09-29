@@ -1,0 +1,8 @@
+.buy{
+    display: grid;
+    @include layout(center-layout);
+    justify-items: start;
+}
+.head{
+    padding: 1rem 0;
+}

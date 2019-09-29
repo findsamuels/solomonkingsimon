@@ -1,0 +1,179 @@
+.showNav{
+
+    @include respond(lg){
+  display: block !important;
+  animation: slidedown .5s ease-in-out;
+ 
+    }
+  
+}
+
+.showDropdown{
+
+    @include respond(lg){
+ display: block !important;
+    padding: 1rem;
+    }
+   
+}
+.email{
+    color: $color-light-blue;
+    cursor: pointer;
+   
+
+    &:hover{
+text-decoration-line: line-through;
+scale: (1rem);
+    }
+}
+.spinner{
+height: 1rem;
+    width: 1rem;
+  
+	background: $color-primary;
+	border-radius: 50%;
+        &--1{
+border-top: .1rem solid $color-grey-dark;
+	animation: spinner1 600ms linear infinite;
+        }
+    }
+.hide{
+display: none;
+}
+.show-grid{
+display: grid
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.arrow-small-white{
+    color: $color-white;
+    font-size: 1rem;
+    padding: .4rem;
+}
+.altNav{
+        background-image: linear-gradient(to right, $color-black, $color-light-blue) !important;
+      
+}
+.tallNav{
+    overflow-y: scroll;
+    height: 100vh;
+}
+.whiteBackground{
+    background-color: $color-white;
+}
+.altItem{
+z-index: 9999;
+    @include respond(lg){
+background-image: linear-gradient(to right, $color-black, $color-light-blue);
+    }
+}
+.whiteText{
+    color: $color-white !important;
+}
+.hideinvalidText{
+display: none;
+}
+.invalidTnputBox{
+    border: .1rem solid $color-red !important;
+}
+.blueInputBox{
+    
+    border: .12rem solid $color-light-blue !important; 
+    box-shadow: $box-shadow-pressed-md;
+}
+.error{
+    color: $color-red !important;
+    font-weight: 700;
+}
+.greyBack{
+background-color: $color-primary;
+height: 100vh;
+overflow: auto;
+
+}
+
+
+.toggle-box{
+display: none;
+cursor: pointer;
+
+@include respond(lg){
+            display: block;
+            padding-right: 1rem;
+        }
+        
+    }
+
+.U-margin-top-md{
+margin-top: 4rem;
+}
+.U-margin-top-lg{
+margin-top: 6rem;
+}
+.U-margin-bottom-md{
+    margin-bottom: 4rem;
+}
+.U-margin-md{
+    margin: 4rem 0;
+}
+.ql-container.ql-snow{
+border: none !important;
+}
+.customiseNav{
+border-bottom: $border-blue-ex-light;
+box-shadow: $box-shadow-pressed-md;
+position: fixed;
+width: 100%;
+background-color: $color-white;
+z-index: 999;
+transition: all .3s;
+animation: fadeIn ease-in-out ;
+}
+
+.paginatelinkBox{
+       display: grid;
+        justify-content: end;
+        overflow: hidden;
+        align-items: center;
+}
+.paginateInfo{
+    padding: .5rem 0;
+    color: $color-green;
+    justify-self: center;
+}
+    .customisePaginate{
+        display: flex;
+        grid-gap: 1rem;
+       grid-template-columns: repeat(5, 1fr);
+       justify-items: center;
+       font-weight: 400;
+       backface-visibility: hidden;
+       
+&>.number{
+padding: .5rem;
+     &:hover{
+border: $border-green-ex-light;
+
+    }
+    &>a{
+padding: .5rem;
+    cursor: pointer;
+    
+   
+    
+    }
+   &.active{
+        border: $border-orange-ex-light;
+    } 
+    
+}
+&>.right-arrow, &>.left-arrow{
+    padding: .5rem;
+    background: $color-primary;
+    border: $border-ex-light;
+    cursor: pointer;
+}
+    }
+
+    

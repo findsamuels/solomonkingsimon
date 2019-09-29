@@ -1,0 +1,5 @@
+.posts{
+    display: grid;
+    @include layout(center-layout);
+    grid-template-columns: repeat(2, 1fr);
+}

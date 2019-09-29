@@ -1,0 +1,10 @@
+.resetContainer{
+    @include layout(col-sm-layout);
+    display: grid;
+    align-items: center;
+    justify-self: center;
+}
+.resetHead{
+    font-size: $heading-5-font;
+    letter-spacing: .3rem;
+}

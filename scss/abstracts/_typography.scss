@@ -1,0 +1,47 @@
+a, li , ul{
+  
+    text-decoration: none ;
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: $heading-font;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+
+ul{
+    margin-bottom: 0  ;
+}
+.medium-text{
+    font-size: $medium-font-size;
+}
+.small-text{
+     font-size: $small-font-size;
+    font-family: $heading-font;
+}
+.icon-alignment{
+    padding: 0 .3rem;
+}
+
+
+ 
+
+.styledHeader-1{
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-gap: 1rem;
+    margin: 2rem 0;
+    align-items: center;
+    justify-content: center;
+text-align: center;
+text-transform: uppercase;
+color: $color-grey-dark;
+&::before, &::after{
+    content: " ";
+ border-top: .2rem solid;
+    
+}
+
+}

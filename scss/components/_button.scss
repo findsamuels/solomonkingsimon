@@ -1,0 +1,119 @@
+.btn{
+     &,
+&:link, 
+ &:visited
+ {
+border: none;
+font-size: 1.2rem;
+    display: inline-block;
+  text-transform: uppercase;
+            padding: .6rem;
+            color: $color-primary;
+            box-shadow: $box-shadow-pressed-md;
+             backface-visibility: hidden;
+                 transition: all .3s;
+                 cursor: pointer;
+                cursor: pointer;
+                @include respond(tab-port){
+                   padding: .6rem;
+                    justify-self: center;
+                }
+                
+
+
+        }
+        &--animate{
+
+    &:active{
+                    
+   transform: translateY(.2rem);
+    box-shadow: $box-shadow-pressed-sm;
+}
+
+    &:hover{
+   
+    box-shadow: $box-shadow-pressed-xs;
+ transform: translateY(.1rem);
+    &::after{
+        outline: none;
+    opacity: 0;
+    }
+}
+}
+
+&--red{
+            color: $color-white;
+            background-color: $color-red;          
+}
+&--white{
+            color: $color-wine-dark;
+            background-color: $color-white;          
+}
+&--green{
+                color: $color-white;
+                background-color: $color-green;
+        }
+        &--green-outline{
+                color:  $color-white;
+                background-color: transparent;
+                border: $color-green solid .1rem;
+
+                &:hover{
+background-color: $color-green;
+color: $color-white;
+                }
+        }
+        &--blue{
+                color: $color-white;
+                background-color: $color-light-blue;
+        }
+        &--blue-outline{
+                color:  $color-light-blue;
+                background-color: transparent;
+                border: $border-blue-ex-light;
+
+                &:hover{
+background-color: $color-light-blue;
+color: $color-white;
+                }
+        }
+        &--homeBtn{
+                color:  $color-white;
+                background-color: transparent;
+                border: $border-blue-ex-light;
+
+                &:hover{
+background-color: $color-light-blue;
+color: $color-white;
+                }
+        }
+        &--wine{
+                color: $color-white;
+                background-image: linear-gradient(to right top, $color-grey-dark,$color-grey-light, $color-wine-dark);
+        }
+
+        &--orange{
+            color: $color-white;
+            background-color: $color-orange;
+            font-size: $medium-font-size;
+            
+            
+}
+&--wide{
+
+    @include respond(phone){
+  width: 50%;
+    }
+  
+}
+&--widest{
+
+  width: 80%;
+   
+  
+}
+
+ }
+ 
+
+        

@@ -1,0 +1,41 @@
+.dashboard{
+display: grid;
+justify-items: center;
+grid-gap: 1rem;
+    &__head{
+        display: grid;
+       grid-gap: 1rem;
+       text-align: center;
+       padding: 1rem;
+       color:  $color-grey-dark;
+        letter-spacing: .4rem;
+       
+    }
+    &__img{
+        
+&:hover{
+            filter: brightness(100%) !important;
+            cursor: pointer;
+
+            
+        }
+&:hover + .card__header{
+display: none !important;
+            }
+        
+    }
+    &__panel{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        
+        @include respond(md){
+            grid-template-columns: 1fr;
+        }
+        
+}
+&__card{
+box-shadow: none !important;
+
+        }
+    }

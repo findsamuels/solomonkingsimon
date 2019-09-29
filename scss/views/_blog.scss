@@ -1,0 +1,63 @@
+.blogView{
+    display: grid;
+    @include layout(center-layout);
+    grid-gap: 1rem;
+    
+}
+.bloghead{
+
+text-transform: uppercase;
+}
+.blogHeader{
+
+}
+.blogList{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 1rem;
+text-align: center;
+
+@include respond(xl){
+grid-template-columns: 1fr;
+}
+&__header{
+    
+}
+&__title{
+   
+ 
+}
+&__items{
+    display: grid;
+    justify-content: start;
+    padding: .5rem;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 100%;
+    border-top: $border-ex-light;
+}
+&__createDate{
+color: $color-grey-dark;
+
+}
+&__card{
+//  border-radius: 2rem 2rem 0 0;
+ background-color: $color-primary;
+//  animation: slideleft 2s ;
+
+}
+&__img{
+    // border-radius: 2rem 2rem 0 0;
+    align-self: flex-start;
+    width: 100%;
+}
+}
+.readmore{ 
+    
+    color: green;
+     border: $color-green solid .1rem;
+}
+
+
+

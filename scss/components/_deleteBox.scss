@@ -1,0 +1,26 @@
+.deleteBox{
+ box-shadow: $box-shadow-pressed-xs;
+ display: grid;
+ position: absolute;
+ z-index: 999;
+ text-align: center;
+ border: $border-ex-light;
+ justify-self: center;
+ padding: 2rem;
+ grid-gap: 1rem;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ margin: 0 auto;
+  width: 50%;
+ background-color: $color-primary;
+
+    &__header{
+font-size: $heading-4-font;
+    }
+    &__deleteButtons{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 1rem;
+    }
+}

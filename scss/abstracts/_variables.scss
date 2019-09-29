@@ -1,0 +1,72 @@
+$color-primary: #eee;
+
+
+$color-grey-light: #676767;
+$color-grey-dark: #333333;
+$color-white: #fff;
+$color-black: #000;
+
+$color-wine-dark: #400000;
+$color-wine-light: #800000;
+$color-secondary: #800080;
+$color-yellow: #ffff00;
+$color-green: #008000;
+$color-orange: #ff8000;
+$color-red: #ff0000;
+$color-light-blue: #478aef;
+$color-dark-blue: #000080;
+
+///BOX-SHADOW
+$box-shadow-lg: 0 1.5rem 3rem rgba($color-black, .8);
+$box-shadow-md: 0 1.5rem 3rem rgba($color-black, .4);
+$box-shadow-sm: 0 1.5rem 3rem rgba($color-black, .2);
+
+$box-shadow-pressed-lg: 0 0.3rem 0.3rem rgba($color-black, .6);
+$box-shadow-pressed-md: 0 0.3rem 0.3rem rgba($color-black, .4);
+$box-shadow-pressed-sm: 0 0.2rem 0.2rem rgba($color-black, .2);
+
+$box-shadow-right: 0 0.3rem 0.3rem 0.6rem rgba($color-black, .2);
+
+$box-shadow-pressed-lg-green: 0 0.3rem 0.3rem rgba($color-green, .2);
+$box-shadow-pressed-xs: 0 0.1rem 0.1rem rgba($color-black, .2);
+
+
+$font-default: 1.4rem;
+
+//FONT-FAMILY
+
+$heading-font: 'Raleway', sans-serif;
+$default-font: 'Open Sans', 'Arial', 'Montserrat' , 'Raleway', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+
+
+$breakpoint-small: 480px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 960px;
+$breakpoint-xlarge: 1220px;
+
+// FONT
+$small-font-size: .6em;
+$medium-font-size: .8em;
+$default-font-size: 1.6rem;
+$heading-font-biggest: 4rem;
+$heading-font-huge: 10rem;
+$heading-font-big: 3em;
+$heading-1-font: 2.6rem;
+$heading-2-font: 2.4rem;
+$heading-3-font: 2.2rem;
+$heading-4-font: 2.0rem;
+$heading-5-font: 1.8rem;
+//BORDER
+
+$border-ex-light: .1rem solid rgba($color-grey-light, .5);
+$border-green-ex-light: .1rem solid rgba($color-green, .5);
+
+$border-blue-ex-light: .1rem solid rgba($color-light-blue, .5);
+$border-orange-ex-light: .1rem solid rgba($color-orange, .2);
+
+$border-light: .2rem solid rgba($color-grey-light, 1);
+$border-dark: .2rem solid rgba($color-grey-dark, 1);
+
+$border-ex-light-white: .1rem solid rgba($color-white, .5);

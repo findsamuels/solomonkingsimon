@@ -1,0 +1,53 @@
+.contactComponent{
+display: grid;
+  @include layout(center-layout);
+    
+    
+    grid-gap: 1rem;
+
+    
+}
+
+.contactHeader{
+text-align: center;
+}
+.contactBox{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+
+   @include respond(lg){
+    grid-template-columns: 1fr;
+  }
+}
+.contactInfo{
+display: grid;
+grid-gap: 1rem;
+
+
+&__heading{
+  color: $color-grey-dark;
+  text-align: center;
+}
+@include respond(md){
+  padding: 1rem 0;
+  border-bottom: $border-ex-light;
+}
+}
+.contactForm{
+text-align: center;
+
+&__form{
+
+  @include respond(md){
+    
+  }
+}
+&__heading{
+  color: $color-grey-dark
+}
+&__text{
+  text-transform: capitalize; 
+
+}
+}

@@ -1,0 +1,25 @@
+.aboutComponent{
+@include layout(col-lg-layout);
+display: grid;
+margin: 3rem 0;
+grid-gap: 1rem;
+
+@include respond(md){
+    @include layout(center-layout);
+}
+}
+
+.about-heading{
+    letter-spacing: .4rem;
+    line-height: 1.5em;
+    text-align: center;
+}
+.about-description{
+display: grid;
+grid-gap: 1rem;
+    &__text{
+
+color: $color-grey-dark;
+    font-size: $heading-5-font;
+    }
+}

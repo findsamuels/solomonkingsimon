@@ -1,0 +1,75 @@
+
+.videoComponent{
+    text-align: center;
+        display: grid;
+    justify-content: center;
+   
+}
+
+.vidContainer{
+    display: grid;
+    grid-template-columns: 1fr 25%;
+}
+
+
+.deleteComponent{
+    display: grid;
+ position: relative;
+
+ &__postSearch{
+ justify-self: center;
+ }
+}
+.videoBox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    
+    
+     @include respond(lg){
+        grid-template-columns: 1fr;
+    }
+}
+.videoList{
+    display: grid;
+    grid-template-columns: 1fr 25%;
+    justify-items: safe;
+    align-items: center;
+background-color: $color-primary;
+color: $color-light-blue;
+border: $border-blue-ex-light;
+    padding: .5rem;
+    box-shadow: $box-shadow-pressed-xs;
+    
+
+ @include respond(lg){
+        justify-self: center;
+    width: 70%;
+    }
+    
+
+   
+    &__title{
+        color: $color-grey-dark;
+      
+    }
+    &__delete{
+        font-size: $heading-4-font;
+        background-color: $color-primary;
+        padding: .5rem;
+        color: $color-orange;
+        height: 100%;
+        justify-self: end;
+        cursor: pointer;
+
+        &:hover{
+            color: $color-red;
+            scale: (5);
+        }
+    }
+}
+
+
+.uploadedVideo{
+    width: 100%;
+}

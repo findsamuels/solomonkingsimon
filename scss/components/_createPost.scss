@@ -1,0 +1,28 @@
+.CreateComponent{
+    // display: grid;
+    // grid-template-columns: [post-start] minmax(8rem, 1fr)[post-center-start] 5fr [post-center-end]  minmax(8rem, 1fr)[post-end];
+    
+    &__head{
+// border-bottom: $border-ex-light;
+box-shadow: $box-shadow-pressed-sm;
+        padding: 1rem 0;
+        text-align: center;
+        letter-spacing: .8rem;
+// grid-column: post-center-start / post-center-end;
+//  @include respond(md){
+//             grid-column: post-start / post-end;
+//         }
+    }
+
+
+
+}
+.createFormBox{
+    // display: grid;
+    //     // justify-content: center;
+    //     grid-column: post-center-start / post-center-end;
+
+    //     @include respond(md){
+    //         grid-column: post-start / post-end;
+    //     }
+}

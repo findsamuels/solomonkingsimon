@@ -1,0 +1,26 @@
+.homeCta{
+@include layout(full-layout);
+background-image: linear-gradient(to right, $color-black, $color-light-blue);
+justify-content: center;
+padding: 3rem 0;
+margin: 2rem 0;
+display: grid;
+text-align: center;
+grid-gap: 1rem;
+}
+.ctaHeader{
+color: $color-white
+}
+.ctaForm{
+@include respond(md){
+grid-template-columns: 1fr;
+        }
+    &__group{
+ 
+    }
+    &__btn{
+        @include respond(md){
+            font-size: $heading-1-font;
+        }
+    }
+}

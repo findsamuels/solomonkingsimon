@@ -1,0 +1,42 @@
+
+.form{
+display: grid;
+grid-template-columns: 1fr ;
+background-color: inherit;
+  
+&__group{
+    display: grid;   
+    grid-template-columns: 1fr ;
+grid-gap: 1rem;
+padding: 1rem;
+
+}
+&__label{
+grid-row: auto;
+grid-column: auto;
+color: $color-grey-dark;
+letter-spacing: .3rem;
+
+}
+
+&__input, &__textarea, &__button{
+border: none;
+grid-column: auto;
+grid-row: auto;
+padding: 1rem;
+color: $color-grey-dark;
+box-shadow: $box-shadow-pressed-xs;
+
+}
+.invalidInputText{
+    color: $color-red !important;
+}
+
+&--inline{
+grid-template-columns: repeat(2, 1fr) ;
+}
+&--inline-3{
+grid-template-columns: 1fr 1fr 1fr ;
+}
+
+}
